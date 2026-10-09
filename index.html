@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="An early-stage computer vision project exploring crowd monitoring and video-based violence detection.">
+  <title>Crowd Behavior Analysis</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      font-family: system-ui, sans-serif;
+      background: #0b1120;
+      color: #e5e7eb;
+      line-height: 1.7;
+    }
+
+    a { color: #67e8f9; text-decoration: none; }
+    a:hover { text-decoration: underline; }
+
+    nav, main, footer {
+      width: min(1050px, 90%);
+      margin: auto;
+    }
+
+    nav {
+      padding: 24px 0;
+      border-bottom: 1px solid #263247;
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .brand { font-weight: 750; color: #fff; }
+
+    .hero { padding: 85px 0 65px; }
+
+    .tag {
+      color: #67e8f9;
+      font-size: 0.85rem;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+    }
+
+    h1 {
+      font-size: clamp(2.5rem, 7vw, 4.5rem);
+      line-height: 1.1;
+      margin: 18px 0;
+      max-width: 850px;
+    }
+
+    .intro {
+      color: #aab7ca;
+      max-width: 700px;
+      font-size: 1.1rem;
+    }
+
+    .actions {
+      display: flex;
+      gap: 14px;
+      flex-wrap: wrap;
+      margin-top: 28px;
+    }
+
+    .btn {
+      padding: 11px 18px;
+      border: 1px solid #3c4b62;
+      border-radius: 8px;
+      display: inline-block;
+    }
+
+    .primary {
+      background: #67e8f9;
+      color: #07111c;
+      border-color: #67e8f9;
+      font-weight: 700;
+    }
+
+    section { padding: 38px 0; }
+
+    h2 { font-size: 1.8rem; margin-bottom: 20px; }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
+      gap: 18px;
+    }
+
+    .card {
+      border: 1px solid #263247;
+      border-radius: 12px;
+      padding: 23px;
+      background: #111a2b;
+    }
+
+    .card h3 { margin-bottom: 10px; color: #fff; }
+    .card p, .muted { color: #aab7ca; }
+
+    .stack {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .stack span {
+      border: 1px solid #334155;
+      padding: 6px 12px;
+      border-radius: 20px;
+      color: #cbd5e1;
+      font-size: 0.9rem;
+    }
+
+    .notice {
+      border-left: 3px solid #67e8f9;
+      padding: 15px 18px;
+      background: #111a2b;
+      color: #cbd5e1;
+    }
+
+    footer {
+      border-top: 1px solid #263247;
+      padding: 24px 0;
+      margin-top: 35px;
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a class="brand" href="#">Crowd Behavior Analysis</a>
+    <a href="https://github.com/karthik8602/crowd_analysis">
+      View source on GitHub ↗
+    </a>
+  </nav>
+
+  <main>
+    <header class="hero">
+      <p class="tag">Computer Vision · Early-stage Project</p>
+      <h1>Understanding crowd activity through video.</h1>
+      <p class="intro">
+        An AI-assisted video analytics project exploring person detection,
+        movement analysis, and video-based violence classification to
+        support crowd monitoring research.
+      </p>
+      <div class="actions">
+        <a class="btn primary"
+           href="https://github.com/karthik8602/crowd_analysis">
+          Explore source code
+        </a>
+        <a class="btn" href="#technology">Technology stack</a>
+      </div>
+    </header>
+
+    <section>
+      <h2>Project focus</h2>
+      <div class="grid">
+        <article class="card">
+          <h3>01 · Person Detection</h3>
+          <p>
+            Explore computer vision techniques for identifying people
+            in video frames.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>02 · Video Classification</h3>
+          <p>
+            Develop temporal action-recognition methods to investigate
+            fight and non-fight activity in video sequences.
+          </p>
+        </article>
+
+        <article class="card">
+          <h3>03 · Monitoring Interface</h3>
+          <p>
+            Build a dashboard to present video-analysis results and
+            support review of potential incidents.
+          </p>
+        </article>
+      </div>
+    </section>
+
+    <section id="technology">
+      <h2>Technology</h2>
+      <div class="stack">
+        <span>Python</span>
+        <span>OpenCV</span>
+        <span>YOLO</span>
+        <span>PyTorch</span>
+        <span>CNN-LSTM</span>
+        <span>Streamlit</span>
+      </div>
+    </section>
+
+    <section>
+      <h2>Development roadmap</h2>
+      <div class="notice">
+        This project is under development. Planned work includes
+        improving video classification, validating model performance,
+        and exploring LLM-assisted incident summaries. Planned features
+        are not yet presented as completed integrations.
+      </div>
+    </section>
+
+    <section>
+      <h2>Open-source development</h2>
+      <p class="muted">
+        Explore the repository, review the implementation, and follow
+        the project's progress.
+      </p>
+      <p style="margin-top: 16px">
+        <a href="https://github.com/karthik8602/crowd_analysis">
+          github.com/karthik8602/crowd_analysis ↗
+        </a>
+      </p>
+    </section>
+  </main>
+
+  <footer>
+    Crowd Behavior Analysis · An independent developer project.
+  </footer>
+</body>
+</html>
